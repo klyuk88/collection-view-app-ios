@@ -13,6 +13,7 @@
 		093A0E8B29E46F1B00D95A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093A0E8A29E46F1B00D95A00 /* Assets.xcassets */; };
 		093A0E8E29E46F1B00D95A00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093A0E8C29E46F1B00D95A00 /* LaunchScreen.storyboard */; };
 		093A0E9629E4740700D95A00 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093A0E9529E4740700D95A00 /* CollectionViewController.swift */; };
+		09913B9329E5AB1C00AF1CD2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09913B9229E5AB1C00AF1CD2 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		093A0E8D29E46F1B00D95A00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		093A0E8F29E46F1B00D95A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093A0E9529E4740700D95A00 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		09913B9229E5AB1C00AF1CD2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				093A0E8129E46F1A00D95A00 /* AppDelegate.swift */,
 				093A0E8329E46F1A00D95A00 /* SceneDelegate.swift */,
 				093A0E9529E4740700D95A00 /* CollectionViewController.swift */,
+				09913B9229E5AB1C00AF1CD2 /* PhotoCell.swift */,
 				093A0E8729E46F1A00D95A00 /* Main.storyboard */,
 				093A0E8A29E46F1B00D95A00 /* Assets.xcassets */,
 				093A0E8C29E46F1B00D95A00 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09913B9329E5AB1C00AF1CD2 /* PhotoCell.swift in Sources */,
 				093A0E9629E4740700D95A00 /* CollectionViewController.swift in Sources */,
 				093A0E8229E46F1A00D95A00 /* AppDelegate.swift in Sources */,
 				093A0E8429E46F1A00D95A00 /* SceneDelegate.swift in Sources */,
