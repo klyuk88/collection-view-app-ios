@@ -9,4 +9,5 @@ import UIKit
 
 class PhotoCell: UICollectionViewCell {
     
+    @IBOutlet var dogImageView: UIImageView!
 }

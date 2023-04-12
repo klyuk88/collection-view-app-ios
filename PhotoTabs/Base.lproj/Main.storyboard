@@ -29,7 +29,21 @@
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="05K-5J-NQj">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K0g-Ts-LS2">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="K0g-Ts-LS2" secondAttribute="bottom" id="Uzm-1l-FOz"/>
+                                        <constraint firstAttribute="trailing" secondItem="K0g-Ts-LS2" secondAttribute="trailing" id="a6n-sd-aHX"/>
+                                        <constraint firstItem="K0g-Ts-LS2" firstAttribute="leading" secondItem="05K-5J-NQj" secondAttribute="leading" id="kRq-3U-0uE"/>
+                                        <constraint firstItem="K0g-Ts-LS2" firstAttribute="top" secondItem="05K-5J-NQj" secondAttribute="top" id="nod-Q5-SPE"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="dogImageView" destination="K0g-Ts-LS2" id="KP0-uv-eSn"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

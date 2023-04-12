@@ -10,6 +10,8 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
+    let photos = ["dog1", "dog2", "dog3", "dog4", "dog5", "dog6", "dog6", "dog5", "dog4", "dog3", "dog2", "dog1"]
+    
     let itemsPerRaw: Double = 2
     let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
 
@@ -36,12 +38,17 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 15
+        return photos.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCell
-    
+        
+        let imageName = photos[indexPath.item]
+        let image = UIImage(named: imageName)
+        
+        cell.dogImageView.image = image
+        
         cell.backgroundColor = .black
     
         return cell
