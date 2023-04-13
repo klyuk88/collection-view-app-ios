@@ -25,6 +25,18 @@ class CollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = 20
 
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "singlePhotoSegue" {
+            let destVC = segue.destination as! PhotoViewController
+            let cell = sender as! PhotoCell
+            destVC.image = cell.dogImageView.image
+        }
+        
+    }
 
  
 

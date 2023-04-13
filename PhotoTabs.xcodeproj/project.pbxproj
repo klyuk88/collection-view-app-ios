@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0923F5AF29E7D8D600A67EAF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923F5AE29E7D8D600A67EAF /* PhotoViewController.swift */; };
 		093A0E8229E46F1A00D95A00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093A0E8129E46F1A00D95A00 /* AppDelegate.swift */; };
 		093A0E8429E46F1A00D95A00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093A0E8329E46F1A00D95A00 /* SceneDelegate.swift */; };
 		093A0E8929E46F1A00D95A00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093A0E8729E46F1A00D95A00 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0923F5AE29E7D8D600A67EAF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		093A0E7E29E46F1A00D95A00 /* PhotoTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		093A0E8129E46F1A00D95A00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		093A0E8329E46F1A00D95A00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				093A0E8129E46F1A00D95A00 /* AppDelegate.swift */,
 				093A0E8329E46F1A00D95A00 /* SceneDelegate.swift */,
 				093A0E9529E4740700D95A00 /* CollectionViewController.swift */,
+				0923F5AE29E7D8D600A67EAF /* PhotoViewController.swift */,
 				09913B9229E5AB1C00AF1CD2 /* PhotoCell.swift */,
 				093A0E8729E46F1A00D95A00 /* Main.storyboard */,
 				093A0E8A29E46F1B00D95A00 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				093A0E9629E4740700D95A00 /* CollectionViewController.swift in Sources */,
 				093A0E8229E46F1A00D95A00 /* AppDelegate.swift in Sources */,
 				093A0E8429E46F1A00D95A00 /* SceneDelegate.swift in Sources */,
+				0923F5AF29E7D8D600A67EAF /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

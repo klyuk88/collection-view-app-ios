@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,6 +44,7 @@
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="dogImageView" destination="K0g-Ts-LS2" id="KP0-uv-eSn"/>
+                                    <segue destination="09D-a2-WIp" kind="presentation" identifier="singlePhotoSegue" id="TXe-JD-r0f"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -75,8 +77,56 @@
             </objects>
             <point key="canvasLocation" x="342.74809160305341" y="-299.29577464788736"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="sP8-Vh-dc2">
+            <objects>
+                <viewController id="09D-a2-WIp" customClass="PhotoViewController" customModule="PhotoTabs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="51w-8e-4cu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-e2-AdK">
+                                <rect key="frame" x="0.0" y="273" width="393" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="JUK-XF-rLU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgK-EQ-sgL">
+                                <rect key="frame" x="134.66666666666666" y="725" width="123.99999999999997" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="CFR-hZ-sf7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="t0M-zo-OII"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Поделиться" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="shareBtnAction:" destination="09D-a2-WIp" eventType="touchUpInside" id="ZlK-qb-UL0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="98R-td-Y42"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N2A-e2-AdK" firstAttribute="trailing" secondItem="98R-td-Y42" secondAttribute="trailing" id="5Oi-a5-uTd"/>
+                            <constraint firstItem="SgK-EQ-sgL" firstAttribute="top" secondItem="N2A-e2-AdK" secondAttribute="bottom" constant="215" id="Jef-8S-xKr"/>
+                            <constraint firstItem="N2A-e2-AdK" firstAttribute="leading" secondItem="98R-td-Y42" secondAttribute="leading" id="YD7-IG-6a0"/>
+                            <constraint firstItem="98R-td-Y42" firstAttribute="bottom" secondItem="SgK-EQ-sgL" secondAttribute="bottom" constant="35" id="fRg-8y-AgH"/>
+                            <constraint firstItem="SgK-EQ-sgL" firstAttribute="centerX" secondItem="51w-8e-4cu" secondAttribute="centerX" id="olP-13-xEu"/>
+                            <constraint firstItem="N2A-e2-AdK" firstAttribute="centerY" secondItem="51w-8e-4cu" secondAttribute="centerY" id="qEv-kC-O2w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="singleImageView" destination="N2A-e2-AdK" id="NGa-2n-dcn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgE-VW-eqW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.7022900763359" y="-299.29577464788736"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
